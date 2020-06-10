@@ -1,0 +1,49 @@
+/*******************
+       GENERAL
+********************/
+
+html, body {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*************
+ G E N E R A L
+**************/
+
+.bold {font-weight: bold;}
+
+.spaceUp5 {margin-top: 5px;}
+.spaceUp10 {margin-top: 10px;}
+
+.spaceDown5 {margin-bottom: 5px;}
+.spaceDown10 {margin-bottom: 10px;}
+
+.spaceRight10 {margin-right: 10px;}
+
+.closer5 {margin-top: -5px;}
+.closer15 {margin-top: -15px;}
+
+.white-border {border-color: white;}
+.white-text {color:white;}
+
+.inline-this {display: inline;}
+
+.copyright {font-size: 0.8rem; color: grey;}
+
+.noTextDecoration:hover {text-decoration: none;}
+
+.floatLeft {float:left;}
+.floatRight {float:right;}
