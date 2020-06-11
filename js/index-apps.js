@@ -2,8 +2,7 @@ var curTime = new Date();
 var hours = curTime.getHours();
 var minutes = curTime.getMinutes();
 
-document.getElementById("cur-hours").textContent = hours+":";
-document.getElementById("cur-minutes").textContent = minutes;
+document.getElementById("cur-hours").textContent = moment().format("HH:mm");
 
 var domWUW1 = document.getElementById("wake-up-time-1");
 var domWUW2 = document.getElementById("wake-up-time-2");
@@ -14,24 +13,31 @@ var domWUW6 = document.getElementById("wake-up-time-6");
 var domWUW7 = document.getElementById("wake-up-time-7");
 var domWUW8 = document.getElementById("wake-up-time-8");
 
-var TimeToWakeUp = function(pos) {
-    this.pos = pos;
 
-}
-
-TimeToWakeUp.prototype.calculateWhen = function(wuw) {
-    x = curTime.setMinutes((this.pos*45));
-    
-    wuw.textContent = x;
-}
-
-var wuw1 = new TimeToWakeUp(1);
-var wuw2 = new TimeToWakeUp(2);
-var wuw3 = new TimeToWakeUp(3);
-var wuw4 = new TimeToWakeUp(4);
-var wuw5 = new TimeToWakeUp(5);
-var wuw6 = new TimeToWakeUp(6);
-var wuw7 = new TimeToWakeUp(7);
-var wuw8 = new TimeToWakeUp(8);
-
-wuw1.calculateWhen(domWUW1);
+var ccTime = moment().add(45, 'minutes');
+console.log(ccTime.format('hh:mm'));
+domWUW1.textContent = ccTime.format("HH:mm");
+var ccTime = moment().add((2*45), 'minutes');
+console.log(ccTime.format('hh:mm'));
+domWUW2.textContent = ccTime.format("HH:mm");
+var ccTime = moment().add((3*45), 'minutes');
+console.log(ccTime.format('hh:mm'));
+domWUW3.textContent = ccTime.format("HH:mm");
+var ccTime = moment().add((4*45), 'minutes');
+console.log(ccTime.format('hh:mm'));
+domWUW4.textContent = ccTime.format("HH:mm");
+var ccTime = moment().add((5*45), 'minutes');
+console.log(ccTime.format('hh:mm'));
+domWUW5.textContent = ccTime.format("HH:mm");
+var ccTime = moment().add((6*45), 'minutes');
+console.log(ccTime.format('hh:mm'));
+domWUW6.textContent = ccTime.format("HH:mm");
+var ccTime = moment().add((7*45), 'minutes');
+console.log(ccTime.format('hh:mm'));
+domWUW7.textContent = ccTime.format("HH:mm");
+var ccTime = moment().add((8*45), 'minutes');
+console.log(ccTime.format('hh:mm'));
+domWUW8.textContent = ccTime.format("HH:mm");
+var ccTime = moment().add((9*45), 'minutes');
+console.log(ccTime.format('hh:mm'));
+domWUW9.textContent = ccTime.format("HH:mm");
