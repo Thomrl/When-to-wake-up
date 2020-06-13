@@ -16,23 +16,34 @@
     
     <center>
         <h2 class="bold spaceDown10">Sleep Calculator</h2>
-        <h4 class="spaceUp10">If I go to sleep now..</h4>
-        <button id="WUW-button">When should I wake up?</button>
-        <!--<ul>
-            <li>Current Time:</li>
-            <li><span id="cur-hours"></span><span id="cur-minutes"></span></li>
-        </ul>--><br><br>
-        <ul id="wake-up-when">
-            <li id="wake-up-time-1"></li>
-            <li id="wake-up-time-2"></li>
-            <li id="wake-up-time-3"></li>
-            <li id="wake-up-time-4"></li>
-            <br>                
-            <li class="spaceUp5" id="wake-up-time-5"></li>
-            <li id="wake-up-time-6"></li>
-            <li id="wake-up-time-7"></li>
-            <li id="wake-up-time-8"></li>
-        </ul>
+        <div id="content">
+            <h4 class="spaceUp10">If I go to sleep now..</h4>
+            <button class="spaceDown10" id="WUW-button">When should I wake up?</button>
+            <div class="spaceUp10">
+                <h4 class="spaceUp10 inline-this">If I go to sleep at </h4>
+                <input id="timeinput" type="time">
+
+            </div> 
+            <button class="spaceUp10" id="WUW2-button">when should I wake up?</button>
+            <!--<ul>
+                <li>Current Time:</li>
+                <li><span id="cur-hours"></span><span id="cur-minutes"></span></li>
+            </ul>--><br><br>
+            <ul id="wake-up-when">
+                <li id="wake-up-time-1"></li>
+                <li id="wake-up-time-2"></li>
+                <li id="wake-up-time-3"></li>
+                <li id="wake-up-time-4"></li>
+                <br>                
+                <li class="spaceUp5" id="wake-up-time-5"></li>
+                <li id="wake-up-time-6"></li>
+                <li id="wake-up-time-7"></li>
+                <li id="wake-up-time-8"></li>
+            </ul>
+            <p>It is said to take on average 15 minutes to fall a sleep. <br>
+            And be the best time to wake up at the end of sleep cycle which usually lasts 90 minutes.<br>
+            </p>
+        </div>
     </center>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/moments.js"></script>

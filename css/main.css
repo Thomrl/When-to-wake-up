@@ -26,9 +26,19 @@ html, body {
     user-select: none;
 }
 
+#content {
+    margin-top: 70px;
+}
+
 #WUW-button {
     /*background-color: rgb(233, 74, 74);*/
     background-color: darkorange;
+    border: none;
+    border: white solid 1px;
+}
+#WUW2-button {
+    /*background-color: rgb(233, 74, 74);*/
+    background-color: rgb(201, 19, 19);
     border: none;
     border: white solid 1px;
 }
@@ -42,17 +52,36 @@ margin-left: -45px;}
     padding: 10px 20px;
     border-radius: 3px;
 }
-/*
+
 #wake-up-when li:first-child {
     background-color: lightgreen;
     display: inline-block;
 }
 #wake-up-when li:nth-child(2) {
-    background-color: rgb(240, 201, 128);
+    background-color: rgb(216, 60, 21);
     display: inline-block;
 }
-*/
+#wake-up-when li:nth-child(3) {
+    background-color: rgb(243, 105, 50);
+    display: inline-block;
+}
+#wake-up-when li:nth-child(6) {
+    background-color: rgb(31, 185, 31);
+    display: inline-block;
+}
+#wake-up-when li:nth-child(8) {
+    background-color: rgb(31, 185, 31);
+    display: inline-block;
+}
+#wake-up-when li:nth-child(7) {
+    background-color: rgb(31, 185, 31);
+    display: inline-block;
+}
 
+
+#timeinput {
+    color: black;
+}
 
 
 
