@@ -20,7 +20,7 @@ function wakeUpWhen() {
     var ccTime = moment().add(45, 'minutes');
     console.log(ccTime.format('hh:mm'));
     domWUW1.textContent = ccTime.format("HH:mm");
-    var ccTime = moment().add((2*90), 'minutes');
+    var ccTime = moment().add((15+(2*90)), 'minutes');
     console.log(ccTime.format('hh:mm'));
     domWUW2.textContent = ccTime.format("HH:mm");
     var ccTime = moment().add((15+(3*90)), 'minutes');
@@ -42,3 +42,4 @@ function wakeUpWhen() {
     console.log(ccTime.format('hh:mm'));
     domWUW8.textContent = ccTime.format("HH:mm");
 }
+

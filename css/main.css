@@ -8,7 +8,9 @@ html, body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     color: white;
+    background: fixed;
     background-image: url('https://scontent.faar1-1.fna.fbcdn.net/v/t1.0-9/57467974_1517961365002838_8077911697894932480_o.jpg?_nc_cat=110&_nc_sid=e3f864&_nc_oc=AQlDsli--0fPjDhBtqLku42VYzh_Vh0xLpSNdp02cgzqEnyfXOLXnLdqCqEXDZsJGb8&_nc_ht=scontent.faar1-1.fna&oh=93454547193713d492c563bbcb3009d4&oe=5F08F047');
+    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
