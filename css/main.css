@@ -42,17 +42,23 @@ html, body {
     border: none;
     border: white solid 1px;
 }
+#WUW3-button {
+    /*background-color: rgb(233, 74, 74);*/
+    background-color: rgb(19, 92, 201);
+    border: none;
+    border: white solid 1px;
+}
 
 #wake-up-when { display:none;
 margin-left: -45px;}
 
 #wake-up-when li {
-    background-color: orange;
+    background-color: rgba(17, 82, 202, 0.473);
     display: inline-block;
     padding: 10px 20px;
     border-radius: 3px;
 }
-
+/*
 #wake-up-when li:first-child {
     background-color: lightgreen;
     display: inline-block;
@@ -77,7 +83,7 @@ margin-left: -45px;}
     background-color: rgb(31, 185, 31);
     display: inline-block;
 }
-
+*/
 
 #timeinput {
     color: black;

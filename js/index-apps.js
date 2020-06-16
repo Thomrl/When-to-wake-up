@@ -12,7 +12,7 @@ var domWUW8 = document.getElementById("wake-up-time-8");
 
 
 button.addEventListener('click', wakeUpWhen);
-
+/*
 button2.addEventListener('click', function() {
     var userInput = domInput.value;
     userSetTime = userInput.split(':')
@@ -29,6 +29,25 @@ button2.addEventListener('click', function() {
     wakeUpWhenPluss((15+(5*90)), domWUW6);
     wakeUpWhenPluss((15+(6*90)), domWUW7);
     wakeUpWhenPluss((15+(7*90)), domWUW8);
+    document.getElementById("wake-up-when").style.display = "block";
+})*/
+
+button2.addEventListener('click', function() {
+    var userInput = domInput.value;
+    userSetTime = userInput.split(':')
+    userSetHour = userSetTime[0]
+    userSetMinute = userSetTime[1]
+    ssTime = moment().set({'hour': userSetHour, 'minute': userSetMinute});
+    console.log(userSetTime);
+    
+    wakeUpWhenMinus(735, domWUW1);
+    wakeUpWhenMinus(645, domWUW2);
+    wakeUpWhenMinus(555, domWUW3);
+    wakeUpWhenMinus(465, domWUW4);
+    wakeUpWhenMinus(375, domWUW5);
+    wakeUpWhenMinus(285, domWUW6);
+    wakeUpWhenMinus(195, domWUW7);
+    wakeUpWhenMinus(105, domWUW8);
     document.getElementById("wake-up-when").style.display = "block";
 })
 
@@ -60,6 +79,7 @@ function wakeUpWhenPluss(addedMins, whichDOM) {
 
 
 function wakeUpWhenMinus(subtdMins, whichDOM) {
-    var ccTime = moment().subtract(subtdMins, 'minutes');
+    ssTime = moment().set({'hour': userSetHour, 'minute': userSetMinute});
+    var ccTime = ssTime.subtract(subtdMins, 'minutes');
     whichDOM.textContent = ccTime.format("HH:mm");
 }
