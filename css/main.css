@@ -28,8 +28,10 @@ html, body {
 }
 
 #content {
-    margin-top: 70px;
+    margin-top: 30px;
 }
+
+#notcontrol {display: none;}
 
 #WUW-button {
     /*background-color: rgb(233, 74, 74);*/
@@ -49,15 +51,25 @@ html, body {
     border: none;
     border: white solid 1px;
 }
+#restart {
+    /*background-color: rgb(233, 74, 74);*/
+    background-color: rgb(209, 10, 10);
+    border: none;
+    border: white solid 1px;
+    font-size: 1.6rem;
+    display: none;
+}
 
-#wake-up-when { display:none;
+#wake-up-when, #amounttime { display:none;
 margin-left: -45px;}
 
-#wake-up-when li {
-    background-color: rgba(17, 82, 202, 0.473);
-    display: inline-block;
+#wake-up-when li, #amounttime li {
+    background-color: rgba(214, 214, 214, 0.966);
+    color:black;
+    display: block;
     padding: 10px 20px;
-    border-radius: 3px;
+    border-radius: 1px;
+    border: rgb(102, 102, 102) solid 1px;
 }
 /*
 #wake-up-when li:first-child {
