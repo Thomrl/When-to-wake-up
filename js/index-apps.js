@@ -18,6 +18,8 @@ var domAT5 = document.getElementById("amount-time-5");
 var domAT6 = document.getElementById("amount-time-6");
 var domAT7 = document.getElementById("amount-time-7");
 var domAT8 = document.getElementById("amount-time-8");
+var showInfo = document.getElementById("show-info");
+var info = document.getElementById("info");
 
 
 button.addEventListener('click', wakeUpWhen);
@@ -103,6 +105,18 @@ restart.addEventListener('click', function() {
     document.getElementById("notcontrol").style.display = "none";
     document.getElementById("restart").style.display = "none";
 })
+
+showInfo.addEventListener('click', function(){
+    document.getElementById("show-info").style.display = "none";
+    document.getElementById("info").style.display = "block";
+})
+
+info.addEventListener('click', function(){
+    document.getElementById("show-info").style.display = "block";
+    document.getElementById("info").style.display = "none";
+})
+
+
 
 function wakeUpWhenPlus(addedMins, whichDOM) {
     var ccTime = moment().add(addedMins, 'minutes');

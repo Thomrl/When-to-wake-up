@@ -18,6 +18,9 @@ html, body {
     background-size: cover;
 }
 
+#info {display: block;}
+#go-to-bed-when {display: none;}
+
 .unselectable {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
